@@ -16,7 +16,7 @@ export const reducer = (state, action) => {
           }
         const nuevosFavs = [...favs, action.payload]
         
-        localStorage.setItem('Favs', JSON.stringify(nuevosFavs))
+        localStorage.setItem('favs', JSON.stringify(nuevosFavs))
         return {...state} 
   }
 }
