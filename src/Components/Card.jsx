@@ -19,14 +19,13 @@ const Card = ({ name, username, id }) => {
     }
     let existe = false
 
-    // Aqui iria la logica para agregar la Card en el localStorage
     favs.map(fav => {
       if(item.id == fav.id) {
         existe = true
         alert(`"${fav.name}" ya existe en los favoritos`)
       }
   })
-  // Aqui iria la logica para agregar la Card en el localStorage
+  
   if (!existe) {
     dispatch({type: 'ADD_FAV', payload: item})
     alert(`"${name}" Dentista Agregado a favoritos.`)
