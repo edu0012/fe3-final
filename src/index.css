@@ -26,8 +26,9 @@ h1{
 nav{
   display: flex;
   width: 80vw;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding: 1rem;
+  text-align: center;
 }
 
 a{
@@ -79,7 +80,10 @@ form{
   padding: 0.5rem 0.5rem 0 0.5rem;
   border: 0.5px solid rgb(136, 136, 136);
 }
-
+.card-image{
+  width: 100%;
+  height: auto;
+}
 .card:hover{
   border: 0.5px solid rgb(206, 217, 142);
 }
@@ -119,4 +123,8 @@ tr:nth-child(even) {
 }
 .dark > a {
   color: white;
+}
+#logo{
+  width: 200px;
+  margin: 0;
 }
